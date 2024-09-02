@@ -27,7 +27,9 @@ The `AllowanceTransfer` contract handles setting allowances on tokens, giving pe
 Before integrating, contracts can request users’ tokens through `Permit2`, users must approve the `Permit2` contract through the specific token contract. To see a detailed technical reference, visit the Uniswap [documentation site](https://docs.uniswap.org/contracts/permit2/overview).
 
 ### Note on viaIR compilation
+
 Permit2 uses viaIR compilation, so importing and deploying it in an integration for tests will require the integrating repository to also use viaIR compilation. This is often quite slow, so can be avoided using the precompiled `DeployPermit2` utility:
+
 ```
 import {DeployPermit2} from "permit2/test/utils/DeployPermit2.sol";
 
@@ -84,7 +86,7 @@ forge snapshot
 Run the command below. Remove `--broadcast`, `---rpc-url`, `--private-key` and `--verify` options to test locally
 
 ```sh
-forge script --broadcast --rpc-url <RPC-URL> --private-key <PRIVATE_KEY> --verify script/DeployPermit2.s.sol:DeployPermit2
+forge script --broadcast --rpc-url https://rpc.mainnet.taraxa.io --private-key xxxxx --legacy script/DeployPermit2.s.sol:DeployPermit2
 ```
 
 ## Acknowledgments

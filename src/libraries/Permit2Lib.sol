@@ -20,11 +20,11 @@ library Permit2Lib {
     bytes32 internal constant DAI_DOMAIN_SEPARATOR = 0xdbb8cf42e1ecb028be3f3dbc922e1d878b963f411dc388ced501601c60f7c6f7;
 
     /// @dev The address for the WETH9 contract on Ethereum mainnet, encoded as a bytes32.
-    bytes32 internal constant WETH9_ADDRESS = 0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2;
+    bytes32 internal constant WETH9_ADDRESS = 0x0000000000000000000000005d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe;
 
     /// @dev The address of the Permit2 contract the library will use.
     IAllowanceTransfer internal constant PERMIT2 =
-        IAllowanceTransfer(address(0x000000000022D473030F116dDEE9F6B43aC78BA3));
+        IAllowanceTransfer(address(0xe7a62cdA3B34A90a6fcC927e36692bF4C9481be1));
 
     /// @notice Transfer a given amount of tokens from one user to another.
     /// @param token The token to transfer.

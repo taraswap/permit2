@@ -31,9 +31,9 @@ contract Permit2LibTest is Test, PermitSignature, GasSnapshot {
     uint256 immutable PK;
     address immutable PK_OWNER;
 
-    Permit2 immutable permit2 = Permit2(0x000000000022D473030F116dDEE9F6B43aC78BA3);
+    Permit2 immutable permit2 = Permit2(0xe7a62cdA3B34A90a6fcC927e36692bF4C9481be1);
 
-    ERC20 immutable weth9Mainnet = ERC20(payable(address(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)));
+    ERC20 immutable weth9Mainnet = ERC20(payable(address(0x5d0Fa4C5668E5809c83c95A7CeF3a9dd7C68d4fE)));
 
     // Use to test errors in Permit2Lib calls.
     MockPermit2Lib immutable permit2Lib = new MockPermit2Lib();
